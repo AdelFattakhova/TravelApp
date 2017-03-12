@@ -16,13 +16,23 @@ using System.Windows.Shapes;
 namespace TravelApp
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для StartWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartWindow : Window
     {
-        public MainWindow()
+        public StartWindow()
         {
             InitializeComponent();
+        }
+
+        private void buttonList_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void buttonFind_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
