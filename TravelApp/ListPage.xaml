@@ -1,0 +1,15 @@
+﻿<Page x:Class="TravelApp.ListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TravelApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="511.213" d:DesignWidth="774.038"
+      Title="ListPage">
+
+    <Grid Background="#FF5ACBCD">
+        <DataGrid x:Name="dataGrid" Margin="10 45 10 45"/>
+
+    </Grid>
+</Page>
