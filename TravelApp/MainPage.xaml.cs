@@ -36,5 +36,11 @@ namespace TravelApp
             LoginPage loginPage = new LoginPage();
             NavigationService.Navigate(new Uri("loginPage.xaml", UriKind.Relative));
         }
+
+        private void buttonFind_Click(object sender, RoutedEventArgs e)
+        {
+            FindPage findPage = new FindPage();
+            NavigationService.Navigate(new Uri("findPage.xaml", UriKind.Relative));
+        }
     }
 }

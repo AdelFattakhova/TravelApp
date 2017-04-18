@@ -1,0 +1,33 @@
+﻿<Page x:Class="TravelApp.FindPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TravelApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="511.213" d:DesignWidth="774.038"
+      Title="FindPage" Background="#FF5ACBCD">
+
+    <Grid>
+        <Expander x:Name="expanderCityFrom" Header="Город отправления" HorizontalAlignment="Left" Margin="53,31,0,0" VerticalAlignment="Top" Height="88">
+            <StackPanel Height="50">
+                <TextBlock>Выберите город отправления</TextBlock>
+                <RadioButton>Москва</RadioButton>
+                <RadioButton>Санкт-Петербург</RadioButton>
+            </StackPanel>
+
+        </Expander>
+        <TextBox x:Name="findcityToBox" HorizontalAlignment="Left" Height="23" Margin="351,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="351,34,0,0" TextWrapping="Wrap" Text="Город прибытия" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="53,124,0,0" TextWrapping="Wrap" Text="Минимальная цена" VerticalAlignment="Top"/>
+        <TextBox x:Name="minPriceBox" HorizontalAlignment="Left" Height="23" Margin="53,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="53,187,0,0" TextWrapping="Wrap" Text="Максимальная цена" VerticalAlignment="Top"/>
+        <TextBox x:Name="maxPriceBox" HorizontalAlignment="Left" Height="23" Margin="53,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker HorizontalAlignment="Left" Margin="351,144,0,0" VerticalAlignment="Top" Width="180"/>
+        <DatePicker HorizontalAlignment="Left" Margin="351,207,0,0" VerticalAlignment="Top" Width="180"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="351,124,0,0" TextWrapping="Wrap" Text="Дата отправления" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="351,187,0,0" TextWrapping="Wrap" Text="Дата прибытия" VerticalAlignment="Top"/>
+        <Button x:Name="buttonFind" Content="Найти" HorizontalAlignment="Left" Margin="53,393,0,0" VerticalAlignment="Top" Width="120" Height="32"/>
+
+    </Grid>
+</Page>

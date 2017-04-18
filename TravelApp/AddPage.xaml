@@ -9,15 +9,25 @@
       Title="AddPage">
 
     <Grid Background="#FF5ACBCD">
-        <TextBox x:Name="cityFromBox" HorizontalAlignment="Left" Height="23" Margin="53,55,0,0" TextWrapping="Wrap" Text="Откуда" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="cityToBox" HorizontalAlignment="Left" Height="23" Margin="328,55,0,0" TextWrapping="Wrap" Text="Куда" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="priceBox" HorizontalAlignment="Left" Height="23" Margin="53,116,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" Width="120"/>
-        <DatePicker HorizontalAlignment="Left" Margin="328,116,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="hotelBox" HorizontalAlignment="Left" Height="23" Margin="53,178,0,0" TextWrapping="Wrap" Text="Отель" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="roomPrice1Box" HorizontalAlignment="Left" Height="23" Margin="328,178,0,0" TextWrapping="Wrap" Text="Цена одноместного" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="Добавить" HorizontalAlignment="Left" Margin="53,0,0,20" VerticalAlignment="Bottom" Width="120" Height="34" FontSize="14"/>
-        <TextBox x:Name="roomPrice2Box" HorizontalAlignment="Left" Height="23" Margin="328,238,0,0" TextWrapping="Wrap" Text="Цена двухместного" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="roomPrice3Box" HorizontalAlignment="Left" Height="23" Margin="328,302,0,0" TextWrapping="Wrap" Text="Цена трехместного" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="cityFromBox" HorizontalAlignment="Left" Height="23" Margin="53,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="cityToBox" HorizontalAlignment="Left" Height="23" Margin="328,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="priceBox" HorizontalAlignment="Left" Height="23" Margin="53,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker HorizontalAlignment="Left" Margin="328,116,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <TextBox x:Name="hotelBox" HorizontalAlignment="Left" Height="23" Margin="53,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="roomPrice1Box" HorizontalAlignment="Left" Height="23" Margin="328,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Добавить" HorizontalAlignment="Left" Margin="53,0,0,22.2" VerticalAlignment="Bottom" Width="120" Height="32" FontSize="14"/>
+        <TextBox x:Name="roomPrice2Box" HorizontalAlignment="Left" Height="23" Margin="328,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="roomPrice3Box" HorizontalAlignment="Left" Height="23" Margin="328,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="53,34,0,0" TextWrapping="Wrap" Text="Откуда" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="53,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16"><Run Text="Цена"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="53,157,0,0" TextWrapping="Wrap" Text="Отель" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="328,34,0,0" TextWrapping="Wrap" Text="Куда" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="508,116,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="329,95,0,0" TextWrapping="Wrap" Text="Туда" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="508,95,0,0" TextWrapping="Wrap" Text="Обратно" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="328,157,0,0" TextWrapping="Wrap" Text="Цена одноместного" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="329,218,0,0" TextWrapping="Wrap" Text="Цена двухместного" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="329,281,0,0" TextWrapping="Wrap" Text="Цена трехместного" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

@@ -59,6 +59,9 @@
       <DependentUpon>AddPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="CityTo.cs" />
+    <Compile Include="FindPage.xaml.cs">
+      <DependentUpon>FindPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Hotels.cs" />
     <Compile Include="ListPage.xaml.cs">
       <DependentUpon>ListPage.xaml</DependentUpon>
@@ -71,6 +74,10 @@
     </Compile>
     <Compile Include="Tours.cs" />
     <Page Include="AddPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FindPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
