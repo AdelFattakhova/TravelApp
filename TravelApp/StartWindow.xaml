@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TravelApp"
         mc:Ignorable="d" 
-        Title="TravelApp" MinHeight="512" MinWidth="775" MaxHeight="605" MaxWidth="868" Topmost="False" ShowInTaskbar="False">
+        Title="TravelApp" MinHeight="512" MinWidth="775" MaxHeight="605" MaxWidth="868" Topmost="False" ShowInTaskbar="False" Icon="Images/1495763109_globe.png">
     <Grid>
         <Frame Name="mainFrame" NavigationUIVisibility="Hidden">
 

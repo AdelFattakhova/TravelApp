@@ -84,20 +84,20 @@ namespace TravelApp
 
         private void buttonEnter_Click(object sender, RoutedEventArgs e)
         {
-            //var hash = CalculateHash("1234321");
-            //if (loginBox.Text == "fattakhova" && CalculateHash(passwordBox.Text) == hash)
-            //{
-            Pages.ListPage.DeserializeData();
+            var hash = CalculateHash("1234");
+            if (loginBox.Text == "fattakhova" && CalculateHash(passwordBox.Text) == hash)
+            {
+                Pages.ListPage.DeserializeData();
             NavigationService.Navigate(Pages.ListPage);
-            //    ListPage listPage = new ListPage();
+                ListPage listPage = new ListPage();
 
-            //}
-            //else
-            //    MessageBox.Show("Неверный пароль", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
-            //loginBox.Text = "Логин";
-            //loginBox.Foreground = new SolidColorBrush(Colors.Gray);
-            //passwordBox.Text = "Пароль";
-            //passwordBox.Foreground = new SolidColorBrush(Colors.Gray);
+            }
+            else
+                MessageBox.Show("Неверный пароль", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+            loginBox.Text = "Логин";
+            loginBox.Foreground = new SolidColorBrush(Colors.Gray);
+            passwordBox.Text = "Пароль";
+            passwordBox.Foreground = new SolidColorBrush(Colors.Gray);
         }
 
         private void Page_PreviewKeyDown(object sender, KeyEventArgs e)
