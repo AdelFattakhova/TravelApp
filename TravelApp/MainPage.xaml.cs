@@ -27,20 +27,14 @@ namespace TravelApp
 
         private void buttonList_Click(object sender, RoutedEventArgs e)
         {
-            ListPage listPage = new ListPage();
-            NavigationService.Navigate(new Uri("listPage.xaml", UriKind.Relative));
+            Pages.ListPage.DeserializeData();
+            NavigationService.Navigate(Pages.ToursPage);
         }
 
         private void buttonLogin_Click(object sender, RoutedEventArgs e)
         {
-            LoginPage loginPage = new LoginPage();
-            NavigationService.Navigate(new Uri("loginPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new LoginPage());
         }
-
-        private void buttonFind_Click(object sender, RoutedEventArgs e)
-        {
-            FindPage findPage = new FindPage();
-            NavigationService.Navigate(new Uri("findPage.xaml", UriKind.Relative));
-        }
+        
     }
 }

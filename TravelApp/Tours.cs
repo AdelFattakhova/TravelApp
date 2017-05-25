@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TravelApp
 {
-    class Tours
+    public class Tours
     {
         private string _cityFrom;
 
@@ -15,7 +15,7 @@ namespace TravelApp
             get { return _cityFrom; }
             set { _cityFrom = value; }
         }
-        
+
         private CityTo _cityTo;
 
         public CityTo CityTo
@@ -32,20 +32,35 @@ namespace TravelApp
             set { _price = value; }
         }
 
-        private DateTime _date;
+        private string _dateGo;
 
-        public DateTime Date
+        public string DateGo
         {
-            get { return _date; }
-            set { _date = value; }
+            get { return _dateGo; }
+            set { _dateGo = value; }
         }
 
-        public Tours(string cityFrom, CityTo cityTo, double price, DateTime date)
+        private string _dateBack;
+
+        public string DateBack
+        {
+            get { return _dateBack; }
+            set { _dateBack = value; }
+        }
+
+        public Tours()
+        {
+
+        }
+
+        public Tours(string cityFrom, CityTo cityTo, double price, string dateGo, string dateBack)
         {
             _cityFrom = cityFrom;
             _cityTo = cityTo;
             _price = price;
-            _date = date;
+            _dateGo = dateGo;
+            _dateBack = dateBack;
         }
+
     }
 }

@@ -5,29 +5,36 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TravelApp"
       mc:Ignorable="d" 
-      d:DesignHeight="511.213" d:DesignWidth="774.038"
+      d:DesignHeight="512" d:DesignWidth="775"
       Title="AddPage">
 
     <Grid Background="#FF5ACBCD">
-        <TextBox x:Name="cityFromBox" HorizontalAlignment="Left" Height="23" Margin="53,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="cityToBox" HorizontalAlignment="Left" Height="23" Margin="328,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="priceBox" HorizontalAlignment="Left" Height="23" Margin="53,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <DatePicker HorizontalAlignment="Left" Margin="328,116,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
-        <TextBox x:Name="hotelBox" HorizontalAlignment="Left" Height="23" Margin="53,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="roomPrice1Box" HorizontalAlignment="Left" Height="23" Margin="328,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="Добавить" HorizontalAlignment="Left" Margin="53,0,0,22.2" VerticalAlignment="Bottom" Width="120" Height="32" FontSize="14"/>
-        <TextBox x:Name="roomPrice2Box" HorizontalAlignment="Left" Height="23" Margin="328,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="roomPrice3Box" HorizontalAlignment="Left" Height="23" Margin="328,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="53,34,0,0" TextWrapping="Wrap" Text="Откуда" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="53,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16"><Run Text="Цена"/><LineBreak/><Run/></TextBlock>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="53,157,0,0" TextWrapping="Wrap" Text="Отель" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="328,34,0,0" TextWrapping="Wrap" Text="Куда" VerticalAlignment="Top"/>
-        <DatePicker HorizontalAlignment="Left" Margin="508,116,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="329,95,0,0" TextWrapping="Wrap" Text="Туда" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="508,95,0,0" TextWrapping="Wrap" Text="Обратно" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="328,157,0,0" TextWrapping="Wrap" Text="Цена одноместного" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="329,218,0,0" TextWrapping="Wrap" Text="Цена двухместного" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="329,281,0,0" TextWrapping="Wrap" Text="Цена трехместного" VerticalAlignment="Top"/>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="258*"/>
+            <ColumnDefinition Width="258*"/>
+            <ColumnDefinition Width="259*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="cityFromBox" Foreground="Gray" HorizontalAlignment="Left" Height="23" Margin="53,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="145" Text="Город отправления" GotFocus="cityFromBox_GotFocus" LostFocus="cityFromBox_LostFocus"/>
+        <TextBox x:Name="countryBox" Foreground="Gray" HorizontalAlignment="Left" Height="23" Margin="53.8,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="145" Text="Страна прибытия" GotFocus="countryBox_GotFocus" LostFocus="countryBox_LostFocus" Grid.Column="1"/>
+        <TextBox x:Name="cityToBox" Foreground="Gray" HorizontalAlignment="Left" Height="23" Margin="55,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="145" Text="Город прибытия" GotFocus="cityToBox_GotFocus" LostFocus="cityToBox_LostFocus" Grid.Column="2"/>
+        <TextBox x:Name="priceBox" Foreground="Gray" HorizontalAlignment="Left" Height="23" Margin="53,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="145" Text="Цена" GotFocus="priceBox_GotFocus" LostFocus="priceBox_LostFocus"/>
+        <TextBox x:Name="hotelBox" Foreground="Gray" HorizontalAlignment="Left" Height="23" Margin="53,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="145" Text="Название отеля" GotFocus="hotelBox_GotFocus" LostFocus="hotelBox_LostFocus"/>
+        <TextBox x:Name="roomPrice1Box" Foreground="Gray" HorizontalAlignment="Left" Height="23" Margin="53.8,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="145" Text="Цена 1-местного номера" GotFocus="roomPrice1Box_GotFocus" LostFocus="roomPrice1Box_LostFocus" Grid.Column="1"/>
+        <TextBox x:Name="roomPrice2Box" Foreground="Gray" HorizontalAlignment="Left" Height="23" Margin="53.8,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="145" Text="Цена 2-местного номера" GotFocus="roomPrice2Box_GotFocus" LostFocus="roomPrice2Box_LostFocus" Grid.Column="1"/>
+        <TextBox x:Name="roomPrice3Box" Foreground="Gray" HorizontalAlignment="Left" Height="23" Margin="53.8,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="145" Text="Цена 3-местного номера" GotFocus="roomPrice3Box_GotFocus" LostFocus="roomPrice3Box_LostFocus" Grid.Column="1"/>
+        <DatePicker x:Name="dateGoPicker" HorizontalAlignment="Left" Margin="53.8,113,0,0" VerticalAlignment="Top" Width="145" Height="23" 
+                     DisplayDateEnd="12/31/17" SelectedDateFormat="Short" Grid.Column="1"/>
+        <DatePicker x:Name="dateBackPicker" HorizontalAlignment="Left" Margin="55,113,0,0" VerticalAlignment="Top" Width="145" Height="23" 
+                     DisplayDateEnd="12/31/17" SelectedDateFormat="Short" Grid.Column="2"/>
+        <Button x:Name="buttonCancel" Content="Назад" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,150,20" VerticalAlignment="Bottom" Width="120" Height="25" Grid.ColumnSpan="2" Click="buttonCancel_Click"/>
+        <Button x:Name="buttonAdd" Content="Добавить" HorizontalAlignment="Right" Margin="0,0,10,20" VerticalAlignment="Bottom" Width="120" Height="25" Click="buttonAdd_Click" Grid.Column="2"/>
     </Grid>
 </Page>

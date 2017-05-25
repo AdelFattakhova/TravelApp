@@ -5,13 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TravelApp"
       mc:Ignorable="d" 
-      d:DesignHeight="511.213" d:DesignWidth="774.038"
+      d:DesignHeight="512" d:DesignWidth="775"
       Title="MainPage">
 
     <Grid Background="#FF5ACBCD">
-        <Button x:Name="buttonList" Content="Список туров" HorizontalAlignment="Right" Margin="0,44,30,0" VerticalAlignment="Top" Width="227" Height="44" FontSize="16" Background="#FFE58E8E" Click="buttonList_Click"/>
-        <Button x:Name="buttonFind" Content="Найти тур" HorizontalAlignment="Right" Margin="0,118,30,0" VerticalAlignment="Top" Width="227" Height="44" FontSize="16" Background="#FFE58E8E" Click="buttonFind_Click"/>
-        <Button x:Name="buttonLogin" Content="Вход для владельца" HorizontalAlignment="Right" Margin="0,231,30,0" VerticalAlignment="Top" Width="227" Height="40" Click="buttonLogin_Click" FontSize="16"/>
+        <Button x:Name="buttonList" Content="Список туров" HorizontalAlignment="Left" Margin="110,0,0,100" VerticalAlignment="Bottom" Width="225" Height="87" FontSize="20" Background="#FFE58E8E" Click="buttonList_Click" Foreground="#FF545599" FontWeight="Bold"/>
+        <Button x:Name="buttonLogin" Content="Вход для владельца" HorizontalAlignment="Right" Margin="0,0,110.2,100" VerticalAlignment="Bottom" Width="225" Height="87" Click="buttonLogin_Click" FontSize="20" Background="#FFE58E8E" Foreground="#FF545599" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,141,0,0" TextWrapping="Wrap" Text="LET'S TRAVEL FROM RUSSIA" VerticalAlignment="Top" Height="51" Width="527" FontSize="36" FontFamily="Lucida Bright" FontWeight="Bold" Foreground="#FF545599"/>
 
     </Grid>
 </Page>

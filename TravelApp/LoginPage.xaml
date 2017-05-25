@@ -5,15 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TravelApp"
       mc:Ignorable="d" 
-      d:DesignHeight="511.213" d:DesignWidth="774.038"
-      Title="LoginPage">
+      d:DesignHeight="512" d:DesignWidth="775"
+      Title="LoginPage" PreviewKeyDown="Page_PreviewKeyDown">
 
     <Grid Background="#FF5ACBCD">
-        <TextBox x:Name="loginBox" HorizontalAlignment="Left" Height="25" Margin="131,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" FontSize="16" TextChanged="loginBox_TextChanged"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="131,126,0,0" VerticalAlignment="Top" Height="25" Width="279" FontSize="18"/>
-        <TextBlock x:Name="textBlockLogin" HorizontalAlignment="Left" Margin="20,63,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Height="25" Width="111" FontSize="18" FontWeight="Bold"/>
-        <TextBlock x:Name="textBlockPassword" HorizontalAlignment="Left" Margin="20,126,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Height="25" Width="111" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="buttonEnter" Content="Вход" HorizontalAlignment="Left" Margin="20 0 0 20" VerticalAlignment="Bottom" Width="144" Height="52" FontSize="18" Click="buttonEnter_Click"/>
-
+        <TextBox x:Name="loginBox" Foreground="Gray" HorizontalAlignment="Center" Margin="0,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="279" FontSize="16" TextChanged="loginBox_TextChanged" GotFocus="loginBox_GotFocus" LostFocus="loginBox_LostFocus" Text="Логин"/>
+        <TextBox x:Name="passwordBox" Foreground="Gray" HorizontalAlignment="Center" Margin="0,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="279" FontSize="16" GotFocus="passwordBox_GotFocus" LostFocus="passwordBox_LostFocus" Text="Пароль"/>
+        <Button x:Name="buttonEnter" Content="Вход" HorizontalAlignment="Right" Margin="0,0,10,20" VerticalAlignment="Bottom" Height="25" Width="120" Click="buttonEnter_Click"/>
+        <Button x:Name="buttonCancel" Content="Назад" HorizontalAlignment="Right" Margin="0,0,150,20" VerticalAlignment="Bottom" Height="25" Width="120" Click="buttonCancel_Click"/>
     </Grid>
 </Page>

@@ -59,8 +59,8 @@
       <DependentUpon>AddPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="CityTo.cs" />
-    <Compile Include="FindPage.xaml.cs">
-      <DependentUpon>FindPage.xaml</DependentUpon>
+    <Compile Include="EditPage.xaml.cs">
+      <DependentUpon>EditPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Hotels.cs" />
     <Compile Include="ListPage.xaml.cs">
@@ -72,12 +72,17 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Tours.cs" />
+    <Compile Include="ToursPage.xaml.cs">
+      <DependentUpon>ToursPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FindPage.xaml">
+    <Page Include="EditPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,6 +110,10 @@
       <DependentUpon>StartWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ToursPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -132,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1495757835_free-28.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

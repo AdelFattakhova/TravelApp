@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace TravelApp
 {
-    class CityTo
+    public class CityTo
     {
-        private string _country;
+        public string _name;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        public string _country;
 
         public string Country
         {
@@ -16,7 +24,7 @@ namespace TravelApp
             set { _country = value; }
         }
 
-        private Hotels _hotel;
+        public Hotels _hotel;
 
         public Hotels Hotel
         {
@@ -24,5 +32,16 @@ namespace TravelApp
             set { _hotel = value; }
         }
 
+        public CityTo()
+        {
+
+        }
+
+        public CityTo(string name, string country, Hotels hotel)
+        {
+            _name = name;
+            _country = country;
+            _hotel = hotel;
+        }
     }
 }

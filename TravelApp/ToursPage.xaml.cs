@@ -16,13 +16,25 @@ using System.Windows.Shapes;
 namespace TravelApp
 {
     /// <summary>
-    /// Логика взаимодействия для FindPage.xaml
+    /// Логика взаимодействия для ToursPage.xaml
     /// </summary>
-    public partial class FindPage : Page
+    public partial class ToursPage : Page
     {
-        public FindPage()
+        public ToursPage()
         {
             InitializeComponent();
         }
+
+        public void RefreshListView()
+        {
+            listViewShowTours.ItemsSource = null;
+            listViewShowTours.ItemsSource = Pages.AddPage._tours;
+        }
+
+        private void buttonCancel_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Pages.MainPage);
+        }
+        
     }
 }
